@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="input.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    
+
+    <title>Loading Appartment</title>
+</head>
+<body class="px-12">
+
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 md:flex-row justify-between items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48.766" height="48.766" viewBox="0 0 48.766 48.766">
+                <defs>
+                  <clipPath id="clip-path">
+                    <rect id="Rectangle_114" data-name="Rectangle 114" width="48.766" height="48.766" transform="translate(100 55.641)" fill="#fff"/>
+                  </clipPath>
+                </defs>
+                <g id="Group_68" data-name="Group 68" transform="translate(-100 -55.641)" clip-path="url(#clip-path)">
+                  <path id="Path_6347" data-name="Path 6347" d="M124.384,55.641c-10.722,0-19.507,8.155-19.507,18.107a17.1,17.1,0,0,0,3.562,10.385L122,102.848c1.9,2.31,3.162,1.871,4.742-.122l14.961-20.587a9.782,9.782,0,0,0,.746-1.6,16.787,16.787,0,0,0,1.437-6.786C143.89,63.8,135.106,55.641,124.384,55.641Zm0,6.869a.768.768,0,0,1,.491.175L135.3,71.4a.677.677,0,0,1-.49,1.191h-1.867V83.6a.708.708,0,0,1-.732.682H116.552a.708.708,0,0,1-.732-.682V72.587h-1.867a.677.677,0,0,1-.49-1.191l10.431-8.712a.764.764,0,0,1,.488-.175Z" fill="#fdbf0f"/>
+                </g>
+              </svg>
+              
+            <span class="ml-3 text-3xl font-bold">Prem <br> Estate</span>
+        
+          </a>
+          <nav class="md:ml-auto md:mr-auto hidden md:flex flex-wrap items-center text-base justify-center text-black font-semibold">
+            <a class="xl:mr-12 lg:mr-8 md:mr-4 sm:mr-2 hover:text-gray-900">Booking</a>
+            <a class="xl:mr-12 lg:mr-8 md:mr-4 sm:mr-2 hover:text-gray-900">Facilities</a>
+            <a class="xl:mr-12 lg:mr-8 md:mr-4 sm:mr-2 hover:text-gray-900">About Us</a>
+            <a class="xl:mr-12 lg:mr-8 md:mr-4 sm:mr-2 hover:text-gray-900">Location</a>
+            <a class="xl:mr-12 lg:mr-8 md:mr-4 sm:mr-2 hover:text-gray-900">Contact</a>
+          </nav>
+          <button class=" md:block items-center hidden bg-black text-white border-0 py-1 px-6 focus:outline-none hover:bg-gray-200 rounded-lg text-base mt-4 md:mt-0">Get Started
+            
+          </button>
+
+          <div class="md:hidden md:flex-row text-black text-2xl items-center">            
+           <a href="#">&#8801;</a>
+        </div>
+
+        </div>
+      </header>
+
+      <!-- find Best Appartment section start here -->
+
+<section class="flex justify-center">
+    <div class="w-[95%] bg-[#C4C4C4] px-4 py-4 rounded-lg justify-center ">
+        <div class=" upper flex flex-col text-white px-8">
+            <div class="upper1">
+              <p class="text-3xl font-semibold mb-4">
+                Find Your Best 
+                  <span class="border-b-4 border-yellow-500">appartment</span>
+                <br> for deals
+              </p>
+              
+
+            </div>
+            <div class="upper2 mb-4">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta veritatis eos perferendis nemo mollitia sint, culpa ullam unde, quibusdam dolorum,
+                </p>
+
+            </div>
+        </div>
+
+
+        <div class="lower w-[95%] bg-white md:ml-8 ml-4 flex flex-wrap md:flex-row mt-28 rounded-lg py-4 px-4 justify-between font-semibold">
+
+            <div class="lower1">
+                <div>
+                    <span class="text-gray-500">Date</span>
+
+                </div>
+                <div class="">
+                 
+                  
+                  <input type="text" id="date-range" class="bg-gray-200 text-black px-4 py-2 rounded-lg w-2/2 focus:border-none" placeholder="Select dates">
+
+                  <script>
+                    flatpickr("#date-range", {
+                      mode: "range",
+                      dateFormat: "d-m M Y",
+                      
+                     
+                    });
+                  </script>
+                </div>
+                
+            </div>
+            <div class="lower2">
+                <div>
+                    <span class="text-gray-500">Guest</span>
+
+                </div>
+                <div>
+
+           
+                    <input class="bg-gray-200 text-black px-4 py-2 rounded-lg w-2/4 focus:border-none " type="text" title="Guest"
+                    value="Guest">
+                  
+                 
+                    
+                </div>
+            </div>
+
+            <div class="lower3 mt-10 md:mt-0">
+                <div>
+                    <span class="text-gray-500">Location</span>
+
+                </div>
+                <div>
+                  <input class="bg-gray-200 text-black px-4 py-2 rounded-lg w-2/2 focus:border-none" type="text" title="Location" value="California, USA">
+
+
+                </div>
+            </div>
+
+            <div class="button mt-16 md:mt-0">
+              <button class="bg-[#FDBF0F] text-black px-12 py-2 md:px-8 md:py-4 rounded-lg font-semibold sm:text-base md:text-lg">
+                Search
+              </button>
+            </div>
+            
+          
+            
+
+        </div>
+    </div>
+</section>
+
+      <!-- find Best Appaertment section end here -->
+
+
+
+
+<!-- service and facility section start here -->
+
+<section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="text-start mb-20">
+        <h1 class="sm:text-3xl text-2xl title-font text-gray-900 mb-4 font-bold">Services and Facilities</h1>
+        <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 text-gray-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor mollitia officia nostrum tenetur voluptatibus tempore nulla pariatur perferendis. Impedit, fugit!</p>
+        
+      </div>
+
+      <div class="w-full flex flex-row sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+
+
+        <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+          <div class=" w-20 h-20 inline-flex items-center justify-center rounded-full bg-[#FDBF0F] text-indigo-500 mb-5 mt-6 md:mt-0 flex-shrink-0">
+
+            <!-- icon goes here -->
+        
+          </div>
+
+
+
+          <div class="flex-grow">
+            <h2 class="text-gray-900 text-lg font-medium mb-3">Working Space</h2>
+            <p class="leading-relaxed text-base text-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id modi eos perferendis consequuntur commodi voluptas. Illo soluta reiciendis vero debitis?</p>
+            
+          </div>
+        </div>
+        <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+          <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-[#FDBF0F] text-indigo-500 mb-5 flex-shrink-0">
+           
+
+            <!-- icon here -->
+
+          </div>
+
+          <div class="flex-grow">
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Parking area</h2>
+            <p class="leading-relaxed text-base text-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id modi eos perferendis consequuntur commodi voluptas. Illo soluta reiciendis vero debitis?</p>
+           
+          </div>
+        </div>
+
+        <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+          <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-[#FDBF0F] text-indigo-500 mb-5 flex-shrink-0">
+            
+            <!-- icon here -->
+
+          </div>
+          <div class="flex-grow">
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Breakfast</h2>
+            <p class="leading-relaxed text-base text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam omnis beatae nisi neque ducimus tempore itaque odio totam reprehenderit? Facilis!</p>
+            
+          </div>
+        </div>
+
+
+        <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+            <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-[#FDBF0F] text-indigo-500 mb-5 flex-shrink-0">
+              
+              <!-- icon here -->
+  
+            </div>
+            <div class="flex-grow">
+              <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Free Wifi</h2>
+              <p class="leading-relaxed text-base text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam omnis beatae nisi neque ducimus tempore itaque odio totam reprehenderit? Facilis!</p>
+              
+            </div>
+          </div>
+
+
+      </div>
+      <div class="flex flex-wrap justify-center items-center">
+        <div>
+            <button class="font-bold flex mx-auto mt-16 text-black bg-white border-0 py-2 px-8 focus:outline-none rounded text-lg">View All</button>
+
+        </div>
+        <div class="mt-16 -ml-6">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="12.235" height="12.235" viewBox="0 0 12.235 12.235">
+                <path id="Path_3138" data-name="Path 3138" d="M216.553,787.529a6.118,6.118,0,1,0-6.117,6.118A6.117,6.117,0,0,0,216.553,787.529Zm-6.254,2.687a.464.464,0,0,1-.139-.332.444.444,0,0,1,.035-.18.473.473,0,0,1,.1-.153L211.835,788h-3.929a.47.47,0,1,1,0-.941h3.929l-1.539-1.551a.474.474,0,0,1-.1-.153.452.452,0,0,1-.035-.181.464.464,0,0,1,.139-.332.477.477,0,0,1,.153-.1.471.471,0,0,1,.361,0,.476.476,0,0,1,.152.1L213.3,787.2a.47.47,0,0,1,0,.663l-2.335,2.353a.456.456,0,0,1-.152.1.468.468,0,0,1-.181.037.484.484,0,0,1-.18-.035.477.477,0,0,1-.153-.1Z" transform="translate(-204.318 -781.412)" fill="#fdbf0f"/>
+              </svg>
+        </div>
+        
+        
+      </div>
+      
+    </div>
+  </section>
+<!-- service and facility section end here -->
+
+
+<!-- Section Get to now use more start here -->
+
+<section class="text-gray-600 body-font">
+    <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col md:flex-row">
+      <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="https://images.unsplash.com/photo-1685475860105-80a4ea08804a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60">
+      <div class="text-center lg:w-2/3 w-full">
+        <h1 class="sm:text-4xl text-3xl mb-4 md:-mt-10 font-medium text-gray-900 text-center md:text-start md:ml-12">Get to now use more</h1>
+        <p class="mb-8 leading-relaxed text-center md:text-start md:ml-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, praesentium odio veniam iusto aliquam nesciunt ipsum obcaecati soluta. Provident mollitia labore quas ab repellat voluptates inventore, architecto ipsam porro incidunt odit harum eaque tenetur vitae commodi repellendus, sapiente voluptatibus possimus.</p>
+
+       
+       <div class="flex text-center justify-center md:justify-start md:text-start md:ml-12 text-2xl font-bold text-black">
+        <div >
+          <p>230K+</p>
+          <p class=" text-gray-500 text-sm font-normal mt-2">Websit User</p>
+        </div>
+        
+        <div class="md:ml-12 ml-12">
+          <p>182K+</p>
+          <p class=" text-gray-500 text-sm font-normal mt-2">Happy Clints</p>
+        </div>
+        <div class="md:ml-12 ml-12">
+          <p>10Y+</p>
+          <p class=" text-gray-500 text-sm font-normal mt-2">Company Years</p>
+        </div>
+        
+       </div>
+       
+      
+
+
+
+        <div class="flex justify-center mt-8 md:justify-start md:ml-12">
+            <div>
+                <button class="inline-flex text-white bg-black border-0 py-2 px-8 pl-4 focus:outline-none hover:bg-indigo-600 rounded text-lg">Explore More</button>
+          
+            </div>
+          <div class="-ml-4 mt-4 -mr-4 ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12.235" height="12.235" viewBox="0 0 12.235 12.235">
+                <path id="Path_3138" data-name="Path 3138" d="M216.553,787.529a6.118,6.118,0,1,0-6.117,6.118A6.117,6.117,0,0,0,216.553,787.529Zm-6.254,2.687a.464.464,0,0,1-.139-.332.444.444,0,0,1,.035-.18.473.473,0,0,1,.1-.153L211.835,788h-3.929a.47.47,0,1,1,0-.941h3.929l-1.539-1.551a.474.474,0,0,1-.1-.153.452.452,0,0,1-.035-.181.464.464,0,0,1,.139-.332.477.477,0,0,1,.153-.1.471.471,0,0,1,.361,0,.476.476,0,0,1,.152.1L213.3,787.2a.47.47,0,0,1,0,.663l-2.335,2.353a.456.456,0,0,1-.152.1.468.468,0,0,1-.181.037.484.484,0,0,1-.18-.035.477.477,0,0,1-.153-.1Z" transform="translate(-204.318 -781.412)" fill="#fdbf0f"/>
+              </svg>
+          </div>
+            
+         
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- get to now use more section end here -->
+
+
+<!-- best quaility appaertment section start here -->
+
+
+<section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-12">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">The best quality Appartment</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit hic sit totam, rem dicta distinctio odit exercitationem earum eius nisi!</p>
+      </div>
+
+      <div class="flex lg:w-2/3 w-full sm:flex-row flex-col mx-auto px-4 sm:space-x-2 sm:space-y-0 space-y-4 sm:px-0 items-end">
+        <div class="relative w-full">
+            <button class="text-black bg-white focus:bg-black focus:text-white border-black border-2 py-1 px-12 focus:outline-none rounded text-lg">Nearby</button>
+        </div>
+        <div class="relative w-full">
+            <button class="text-black bg-white focus:bg-black focus:text-white border-black border-2 py-1 px-12 focus:outline-none rounded text-lg">Exclusive</button>
+        </div>
+
+        <div class="relative w-full">
+            <button class="text-black bg-white focus:bg-black focus:text-white border-black border-2 py-1 px-12 focus:outline-none rounded text-lg">Standart</button>
+        </div>
+        
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap -m-4">
+<!-- 1 -->
+        <div class="lg:w-1/3 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded overflow-hidden">
+              <img alt="Real Casteple House" class="object-cover object-center rounded-lg w-full h-full block" src="https://images.unsplash.com/photo-1505819244306-ef53954f9648?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fFJlYWwlMjBDYXN0ZXBsZSUyMEhvdXNlJTIwY2FybGlmb25pYXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60">
+            </a>
+            <div class="mt-4">
+              <div>
+                <h2 class="text-gray-900 title-font text-lg font-medium">Real Casteple House</h2>
+                <div class="flex items-center mt-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 8.485 10.606" class="w-4 h-5 text-yellow-500">
+                    <path id="Path_3096" data-name="Path 3096" d="M43.258,1490.92a3.176,3.176,0,1,0-5.234.56h0l1.885,2.01a.8.8,0,0,0,.248.17.762.762,0,0,0,.593,0,.8.8,0,0,0,.248-.17l1.885-2.01h0c.014-.02.027-.03.04-.05a3.261,3.261,0,0,0,.34-.51Zm-2.8-.28a1.114,1.114,0,0,1-.793-.32,1.151,1.151,0,0,1-.328-.8,1.121,1.121,0,0,1,2.242,0,1.15,1.15,0,0,1-.328.8A1.114,1.114,0,0,1,40.454,1490.64Z" transform="translate(-37.276 -1486.25)" fill="currentColor"/>
+                  </svg>
+                  <h3 class="text-gray-500 text-xs ml-1">California, USA</h3>
+                </div>
+                <hr>
+              </div>
+              <div class="flex justify-between mt-3 px-4">
+                <p class="mt-1 text-sm md:text-base font-bold text-yellow-500">$175.00<span class="text-xs ml-1 text-gray-300">/Month</span></p>
+                <button class="bg-black text-white mt-1 px-4 py-1 rounded-lg">Details</button>
+              </div>
+            </div>
+          </div>
+<!-- 2 -->
+<div class="lg:w-1/3 md:w-1/2 p-4 w-full">
+    <a class="block relative h-48 rounded overflow-hidden">
+      <img alt="Luxury Cubicle House" class="object-cover object-center rounded-lg w-full h-full block" src="https://images.unsplash.com/photo-1452626212852-811d58933cae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8THV4dXJ5JTIwQ3ViaWNsZSUyMEhvdXNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60">
+    </a>
+    <div class="mt-4">
+      <div>
+        <h2 class="text-gray-900 title-font text-lg font-medium">Luxury Cubicle House</h2>
+        <div class="flex items-center mt-1">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 8.485 10.606" class="w-4 h-5 text-yellow-500">
+            <path id="Path_3096" data-name="Path 3096" d="M43.258,1490.92a3.176,3.176,0,1,0-5.234.56h0l1.885,2.01a.8.8,0,0,0,.248.17.762.762,0,0,0,.593,0,.8.8,0,0,0,.248-.17l1.885-2.01h0c.014-.02.027-.03.04-.05a3.261,3.261,0,0,0,.34-.51Zm-2.8-.28a1.114,1.114,0,0,1-.793-.32,1.151,1.151,0,0,1-.328-.8,1.121,1.121,0,0,1,2.242,0,1.15,1.15,0,0,1-.328.8A1.114,1.114,0,0,1,40.454,1490.64Z" transform="translate(-37.276 -1486.25)" fill="currentColor"/>
+          </svg>
+          <h3 class="text-gray-500 text-xs ml-1">California, USA</h3>
+        </div>
+        <hr>
+      </div>
+      <div class="flex justify-between mt-3 px-4">
+        <p class="mt-1 text-sm md:text-base font-bold text-yellow-500">$345.00<span class="text-xs ml-1 text-gray-300">/Month</span></p>
+        <button class="bg-black text-white mt-1 px-4 py-1 rounded-lg">Details</button>
+      </div>
+    </div>
+  </div>
+  <!-- 3 -->
+  <div class="lg:w-1/3 md:w-1/2 p-4 w-full">
+    <a class="block relative h-48 rounded overflow-hidden">
+      <img alt="Unique Omah Estate" class="object-cover object-center rounded-lg w-full h-full block" src="https://images.unsplash.com/photo-1416331108676-a22ccb276e35?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fFVuaXF1ZSUyME9tYWglMjBFc3RhdGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60">
+    </a>
+    <div class="mt-4">
+      <div>
+        <h2 class="text-gray-900 title-font text-lg font-medium">Unique Omah Estate</h2>
+        <div class="flex items-center mt-1">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 8.485 10.606" class="w-4 h-5 text-yellow-500">
+            <path id="Path_3096" data-name="Path 3096" d="M43.258,1490.92a3.176,3.176,0,1,0-5.234.56h0l1.885,2.01a.8.8,0,0,0,.248.17.762.762,0,0,0,.593,0,.8.8,0,0,0,.248-.17l1.885-2.01h0c.014-.02.027-.03.04-.05a3.261,3.261,0,0,0,.34-.51Zm-2.8-.28a1.114,1.114,0,0,1-.793-.32,1.151,1.151,0,0,1-.328-.8,1.121,1.121,0,0,1,2.242,0,1.15,1.15,0,0,1-.328.8A1.114,1.114,0,0,1,40.454,1490.64Z" transform="translate(-37.276 -1486.25)" fill="currentColor"/>
+          </svg>
+          <h3 class="text-gray-500 text-xs ml-1">California, USA</h3>
+        </div>
+        <hr>
+      </div>
+      <div class="flex justify-between mt-3 px-4">
+        <p class="mt-1 text-sm md:text-base font-bold text-yellow-500">$310.00<span class="text-xs ml-1 text-gray-300">/Month</span></p>
+        <button class="bg-black text-white mt-1 px-4 py-1 rounded-lg">Details</button>
+      </div>
+    </div>
+  </div> 
+  <!-- 4      -->
+  <div class="lg:w-1/3 md:w-1/2 p-4 w-full">
+    <a class="block relative h-48 rounded overflow-hidden">
+      <img alt="Donau House" class="object-cover object-center rounded-lg w-full h-full block" src="https://images.unsplash.com/photo-1494526585095-c41746248156?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fERvbmF1JTIwSG91c2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60">
+    </a>
+    <div class="mt-4">
+      <div>
+        <h2 class="text-gray-900 title-font text-lg font-medium">Donau House</h2>
+        <div class="flex items-center mt-1">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 8.485 10.606" class="w-4 h-5 text-yellow-500">
+            <path id="Path_3096" data-name="Path 3096" d="M43.258,1490.92a3.176,3.176,0,1,0-5.234.56h0l1.885,2.01a.8.8,0,0,0,.248.17.762.762,0,0,0,.593,0,.8.8,0,0,0,.248-.17l1.885-2.01h0c.014-.02.027-.03.04-.05a3.261,3.261,0,0,0,.34-.51Zm-2.8-.28a1.114,1.114,0,0,1-.793-.32,1.151,1.151,0,0,1-.328-.8,1.121,1.121,0,0,1,2.242,0,1.15,1.15,0,0,1-.328.8A1.114,1.114,0,0,1,40.454,1490.64Z" transform="translate(-37.276 -1486.25)" fill="currentColor"/>
+          </svg>
+          <h3 class="text-gray-500 text-xs ml-1">California, USA</h3>
+        </div>
+        <hr>
+      </div>
+      <div class="flex justify-between mt-3 px-4">
+        <p class="mt-1 text-sm md:text-base font-bold text-yellow-500">$235.00<span class="text-xs ml-1 text-gray-300">/Month</span></p>
+        <button class="bg-black text-white mt-1 px-4 py-1 rounded-lg">Details</button>
+      </div>
+    </div>
+  </div> 
+  <!-- 5 -->
+  <div class="lg:w-1/3 md:w-1/2 p-4 w-full">
+    <a class="block relative h-48 rounded overflow-hidden">
+      <img alt="Escape Beautiful House" class="object-cover object-center rounded-lg w-full h-full block" src="https://media.istockphoto.com/id/1497673370/photo/charming-houses-dotting-the-swiss-alps-in-switzerland-showcasing-the-idyllic-beauty-of-this.webp?b=1&s=170667a&w=0&k=20&c=ll6say7NywO6VREDVEy63rvJiTZt8rwB3gD1q1IHmEg=">
+    </a>
+    <div class="mt-4">
+      <div>
+        <h2 class="text-gray-900 title-font text-lg font-medium">Escape Beautiful House</h2>
+        <div class="flex items-center mt-1">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 8.485 10.606" class="w-4 h-5 text-yellow-500">
+            <path id="Path_3096" data-name="Path 3096" d="M43.258,1490.92a3.176,3.176,0,1,0-5.234.56h0l1.885,2.01a.8.8,0,0,0,.248.17.762.762,0,0,0,.593,0,.8.8,0,0,0,.248-.17l1.885-2.01h0c.014-.02.027-.03.04-.05a3.261,3.261,0,0,0,.34-.51Zm-2.8-.28a1.114,1.114,0,0,1-.793-.32,1.151,1.151,0,0,1-.328-.8,1.121,1.121,0,0,1,2.242,0,1.15,1.15,0,0,1-.328.8A1.114,1.114,0,0,1,40.454,1490.64Z" transform="translate(-37.276 -1486.25)" fill="currentColor"/>
+          </svg>
+          <h3 class="text-gray-500 text-xs ml-1">California, USA</h3>
+        </div>
+        <hr>
+      </div>
+      <div class="flex justify-between mt-3 px-4">
+        <p class="mt-1 text-sm md:text-base font-bold text-yellow-500">$205.00<span class="text-xs ml-1 text-gray-300">/Month</span></p>
+        <button class="bg-black text-white mt-1 px-4 py-1 rounded-lg">Details</button>
+      </div>
+    </div>
+  </div> 
+  <!-- 6 -->
+  <div class="lg:w-1/3 md:w-1/2 p-4 w-full">
+    <a class="block relative h-48 rounded overflow-hidden">
+      <img alt="Real Gardian Marina" class="object-cover object-center rounded-lg w-full h-full block" src="https://images.unsplash.com/photo-1472224371017-08207f84aaae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8UmVhbCUyMEdhcmRpYW4lMjBNYXJpbmF8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60">
+    </a>
+    <div class="mt-4">
+      <div>
+        <h2 class="text-gray-900 title-font text-lg font-medium">Real Gardian Marina</h2>
+        <div class="flex items-center mt-1">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 8.485 10.606" class="w-4 h-5 text-yellow-500">
+            <path id="Path_3096" data-name="Path 3096" d="M43.258,1490.92a3.176,3.176,0,1,0-5.234.56h0l1.885,2.01a.8.8,0,0,0,.248.17.762.762,0,0,0,.593,0,.8.8,0,0,0,.248-.17l1.885-2.01h0c.014-.02.027-.03.04-.05a3.261,3.261,0,0,0,.34-.51Zm-2.8-.28a1.114,1.114,0,0,1-.793-.32,1.151,1.151,0,0,1-.328-.8,1.121,1.121,0,0,1,2.242,0,1.15,1.15,0,0,1-.328.8A1.114,1.114,0,0,1,40.454,1490.64Z" transform="translate(-37.276 -1486.25)" fill="currentColor"/>
+          </svg>
+          <h3 class="text-gray-500 text-xs ml-1">California, USA</h3>
+        </div>
+        <hr>
+      </div>
+      <div class="flex justify-between mt-3 px-4">
+        <p class="mt-1 text-sm md:text-base font-bold text-yellow-500">$378.00<span class="text-xs ml-1 text-gray-300">/Month</span></p>
+        <button class="bg-black text-white mt-1 px-4 py-1 rounded-lg">Details</button>
+      </div>
+    </div>
+  </div> 
+  <!-- 7 -->
+
+
+
+
+
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+<!-- best quaility appartment section end here -->
+
+
+
+<!-- choose a location where you are secation start here! -->
+
+<section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-12">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Choose a location where you are</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, enim iusto. Est repellat esse omnis corporis nihil, blanditiis quasi odit.</p>
+      </div>
+
+
+      <section class="text-gray-600 body-font relative">
+        <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap flex-col">
+          <div class="lg:w-full md:w-1/2 h-[50%] bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+            <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=%C4%B0zmir+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed" style="filter: grayscale(0) contrast(1.2) opacity(0.4);"></iframe>
+            
+            
+           
+          </div>
+
+          <div class="bg-black text-white relative flex flex-wrap flex-col py-6 rounded-lg shadow-md justify-end">
+            <div class="lg:w-4/6 px-6">
+              <h2 class="font-bold text-2xl mb-4">Subscribe now to get notified about the latest info and price offers</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum commodi ad vitae voluptatibus animi iusto voluptatum, repellat excepturi voluptatem, voluptates quae reprehenderit maiores fuga culpa eos totam eligendi expedita libero.</p>
+              
+            </div>
+            <div class="lg:w-2/3 px-6 mt-4 lg:mt-4 ">
+              <input class="bg-gray-500 text-start rounded-lg w-2/3 px-2 py-2" type="email" placeholder="Enter Your Email Address">
+              <button class="text-black bg-[#FDBF0F] rounded-lg px-2 py-2 mr-2">Subscribe</button>
+            </div>
+          </div>
+          
+      </section>      
+    </div>
+  </section>
+
+
+<!-- choose a location where you are section end here! -->
+
+
+<!-- Footer sextion start here -->
+
+<footer class="text-black body-font">
+    <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+      <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+       
+              
+       
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+         
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48.766" height="48.766" viewBox="0 0 48.766 48.766">
+                <defs>
+                  <clipPath id="clip-path">
+                    <rect id="Rectangle_114" data-name="Rectangle 114" width="48.766" height="48.766" transform="translate(100 55.641)" fill="#fff"/>
+                  </clipPath>
+                </defs>
+                <g id="Group_68" data-name="Group 68" transform="translate(-100 -55.641)" clip-path="url(#clip-path)">
+                  <path id="Path_6347" data-name="Path 6347" d="M124.384,55.641c-10.722,0-19.507,8.155-19.507,18.107a17.1,17.1,0,0,0,3.562,10.385L122,102.848c1.9,2.31,3.162,1.871,4.742-.122l14.961-20.587a9.782,9.782,0,0,0,.746-1.6,16.787,16.787,0,0,0,1.437-6.786C143.89,63.8,135.106,55.641,124.384,55.641Zm0,6.869a.768.768,0,0,1,.491.175L135.3,71.4a.677.677,0,0,1-.49,1.191h-1.867V83.6a.708.708,0,0,1-.732.682H116.552a.708.708,0,0,1-.732-.682V72.587h-1.867a.677.677,0,0,1-.49-1.191l10.431-8.712a.764.764,0,0,1,.488-.175Z" fill="#fdbf0f"/>
+                </g>
+              </svg>
+         
+         
+          <span class="ml-3 text-2xl font-bold">Prem<br>Estate</span>
+        </a>
+        <p class="mt-2 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id exercitationem atque, consectetur perspiciatis aut</p>
+      </div>
+      <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+        <div class="lg:w-2/4 md:w-1/2 w-full px-4">
+          <h2 class=" text-gray-900 tracking-widest mb-3 font-bold text-xl">Company </h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class=" hover:text-gray-800">Address : 123 fifth Avenue, New York-1060, USA</a>
+            </li>
+            <li>
+              <a class=" hover:text-gray-800">Call Us: +(1600) 456 7890</a>
+            </li>
+            <li>
+              <a class=" hover:text-gray-800">Email : YourID@gmail.com</a>
+            </li>
+            <li>
+              <a class=" hover:text-gray-800">Mon Sat : 9:00 AM - 19:00 PM</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-8">
+          <h2 class="font-bold text-gray-900 tracking-widest text-xl mb-3">Pages</h2>
+          <nav class="list-none mb-10">
+            <li class="">
+              <a class=" hover:text-gray-800 ">Home</a>
+            </li>
+            <li class="mt-2">
+              <a class=" hover:text-gray-800">Booking</a>
+            </li>
+            <li class="mt-2">
+              <a class=" hover:text-gray-800">Facilities</a>
+            </li>
+            <li class="mt-2">
+              <a class=" hover:text-gray-800">About Us</a>
+            </li>
+            <li class="mt-2">
+                <a class=" hover:text-gray-800">Location</a>
+              </li>
+              <li class="mt-2">
+                <a class=" hover:text-gray-800">Contact</a>
+              </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-bold text-gray-900 tracking-widest text-xl mb-3">Contact Us</h2>
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22.5" height="22.5" viewBox="0 0 22.5 22.5">
+                <path id="Path_3197" data-name="Path 3197" d="M1204.53,5267.3h-.91v-.05H1193.5v4.5h6.36a6.756,6.756,0,1,1-1.88-7.29l3.18-3.18a11.237,11.237,0,1,0,3.59,8.22A11.4,11.4,0,0,0,1204.53,5267.3Z" transform="translate(-1182.25 -5258.25)" fill="#ffc107"/>
+              </svg>
+              
+           
+           
+            <a class="text-blue-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-blue-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              </svg>
+            </a>
+            
+            <a class="ml-3 text-blue-500">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
+        </div>
+        
+      </div>
+    </div>
+   
+  </footer>
+
+<!-- Footer section end here -->
+
+
+
+
+    
+</body>
+</html>
